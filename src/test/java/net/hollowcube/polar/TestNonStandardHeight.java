@@ -4,6 +4,7 @@ import net.minestom.server.MinecraftServer;
 import net.minestom.server.instance.InstanceContainer;
 import net.minestom.server.instance.block.Block;
 import net.minestom.server.registry.DynamicRegistry;
+import net.minestom.server.registry.RegistryKey;
 import net.minestom.server.world.DimensionType;
 import org.junit.jupiter.api.Test;
 
@@ -18,7 +19,7 @@ class TestNonStandardHeight {
             .height(4064)
             .build();
 
-    static final DynamicRegistry.Key<DimensionType> dimensionTypeKey;
+    static final RegistryKey<DimensionType> dimensionTypeKey;
 
     static {
         MinecraftServer.init();
